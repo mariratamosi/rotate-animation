@@ -30,21 +30,21 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  animation: mymove 5s infinite;
+  animation: mymove 2s infinite alternate;
 }
 
-.rect:hover ~ .rect {
-  animation: none;
+#all-rect:hover > .rect {
+  animation-play-state: paused;
 }
 
 #all-rect {
   position: relative;
-  height: 240px;
-  width: 240px;
+  height: 400px;
+  width: 400px;
 }
 
 @keyframes mymove {
-  50% {
+  0% {
     transform: rotate(360deg);
   }
 }
